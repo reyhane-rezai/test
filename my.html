@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+        res=Math.random();
+        let computerMove;
+        let ans;
+        if(res<1/3){
+            computerMove=`rock`;
+            ans=`tie.`;
+        }
+        else if(res<2/3){
+            computerMove=`Paper`;
+            ans=`you lose.`
+        }
+        else{
+            computerMove=`scissors`;
+            ans=`you win.`;
+        }
+        alert(`you picked rock. computer picked ${computerMove}. ${ans}`);
+    ">Rock</button>
+    <button onclick="
+    res=Math.random();
+    if(res<1/3){
+            computerMove=`rock`;
+            ans=`you win.`;
+
+        }
+        else if(res<2/3){
+            computerMove=`Paper`;
+            ans=`tie.`;
+        }
+        else{
+            computerMove=`scissors`;
+            ans=`you lose.`;
+        }
+        alert(`you picked paper. computer picked ${computerMove}. ${ans}`);
+    ">Paper</button>
+    <button onclick="
+    res=Math.random
+    if(res<1/3){
+            computerMove=`rock`;
+            ans=`you lose.`;
+        }
+        else if(res<2/3){
+            computerMove=`Paper`;
+            ans=`you win.`;
+        }
+        else{
+            computerMove=`scissors`;
+            ans=`tie.`;
+        }
+        alert(`you picked scissors. computer picked ${computerMove}. ${ans}`);
+    ">scissors</button>
+    <script>
+        let res;
+    </script>
+  </body>
+</html>
